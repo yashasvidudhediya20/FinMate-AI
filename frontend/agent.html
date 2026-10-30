@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FinMate AI - Finance Agent</title>
+
+    <link rel="stylesheet" href="css/agent.css">
+
+    <!-- Connect JavaScript -->
+    <script src="js/app.js" defer></script>
+</head>
+
+<body>
+
+    <div class="app-container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <div class="logo">
+                <span>✦</span> FinMate AI
+            </div>
+
+            <p class="sidebar-label">WORKSPACE</p>
+
+            <nav>
+                <a href="#" class="nav-link active">⌂ Overview</a>
+                <a href="#" class="nav-link">◈ Finance Agent</a>
+                <a href="#" class="nav-link">▤ Transactions</a>
+                <a href="#" class="nav-link">◎ Budgets</a>
+                <a href="#" class="nav-link">♧ Savings</a>
+            </nav>
+
+            <div class="sidebar-bottom">
+                <div class="profile">
+                    <div class="avatar">F</div>
+
+                    <div>
+                        <strong>FinMate User</strong>
+                        <small>Personal Account</small>
+                    </div>
+                </div>
+            </div>
+
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <header class="topbar">
+
+                <div>
+                    <h2>Finance Agent</h2>
+                    <p>Your personal AI-powered financial assistant</p>
+                </div>
+
+                <div class="status">
+                    <span class="status-dot"></span>
+                    Agent Ready
+                </div>
+
+            </header>
+
+            <!-- Welcome Section -->
+            <section class="welcome-section">
+
+                <div class="welcome-icon">✦</div>
+
+                <h1>Meet your Finance Agent</h1>
+
+                <p>
+                    Your money, your goals, your decisions.
+                    Let FinMate help you understand and manage your finances.
+                </p>
+
+            </section>
+
+            <!-- Finance Tools -->
+            <section class="tools-section">
+
+                <h3>Finance Tools</h3>
+
+                <div class="tools-grid">
+
+                    <button class="tool-card"
+                        data-prompt="Analyse my expenses">
+
+                        <span>📊</span>
+                        <strong>Expense Analysis</strong>
+                        <small>Understand your spending habits</small>
+
+                    </button>
+
+                    <button class="tool-card"
+                        data-prompt="Help me create a budget">
+
+                        <span>💰</span>
+                        <strong>Budget Planner</strong>
+                        <small>Plan your monthly budget</small>
+
+                    </button>
+
+                    <button class="tool-card"
+                        data-prompt="Give me saving suggestions">
+
+                        <span>🐷</span>
+                        <strong>Smart Savings</strong>
+                        <small>Discover ways to save money</small>
+
+                    </button>
+
+                    <button class="tool-card"
+                        data-prompt="Predict my future expenses">
+
+                        <span>📈</span>
+                        <strong>Expense Prediction</strong>
+                        <small>Explore your spending trends</small>
+
+                    </button>
+
+                </div>
+
+            </section>
+
+            <!-- Quick Actions -->
+            <section class="quick-section">
+
+                <h3>Quick Actions</h3>
+
+                <div class="quick-actions">
+
+                    <button data-prompt="Where did most of my money go this month?">
+                        Where did my money go?
+                    </button>
+
+                    <button data-prompt="How can I save more money?">
+                        How can I save more?
+                    </button>
+
+                    <button data-prompt="Show me my financial summary">
+                        Show my financial summary
+                    </button>
+
+                </div>
+
+            </section>
+
+            <!-- Chat Section -->
+            <section class="chat-section">
+
+                <div class="chat-heading">
+
+                    <div>
+                        <h3>Chat with FinMate</h3>
+                        <p>Ask anything about your finances</p>
+                    </div>
+
+                    <span class="online-label">● Online</span>
+
+                </div>
+
+                <!-- Chat Messages -->
+                <div class="chat-messages" id="chat-messages">
+
+                    <div class="bot-message">
+
+                        <div class="bot-avatar">✦</div>
+
+                        <div class="message">
+                            Hello! I'm FinMate, your personal finance assistant.
+                            I can help you analyse expenses, plan budgets and
+                            improve your savings. What would you like to know?
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Chat Input -->
+                <form class="chat-input-area" id="chat-form">
+
+                    <input
+                        type="text"
+                        id="chat-input"
+                        placeholder="Ask FinMate anything..."
+                        autocomplete="off"
+                        required
+                    >
+
+                    <button type="submit" id="send-button">
+                        Send ↑
+                    </button>
+
+                </form>
+
+                <p class="chat-note">
+                    FinMate AI can make mistakes.
+                    Always review important financial decisions.
+                </p>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+</html>
